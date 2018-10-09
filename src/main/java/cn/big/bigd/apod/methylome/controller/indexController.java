@@ -1,7 +1,6 @@
 package cn.big.bigd.apod.methylome.controller;
 
-import cn.big.bigd.apod.methylome.dao.Beta450DAO;
-import cn.big.bigd.apod.methylome.domain.Beta450;
+import cn.big.bigd.apod.methylome.dao.Beta10KDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,8 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class indexController {
-    @Autowired
-    Beta450DAO beta450DAO;
+
 
     @GetMapping(value = "/")
     public String root() {
@@ -23,7 +21,7 @@ public class indexController {
 
 //    @RequestMapping("/index")
 //    public String findBySample_id(){
-//        Beta450 findBySample_id = beta450DAO.findBeta450BySampleId("GSM1");
+//        Beta10K findBySample_id = beta450DAO.findBeta450BySampleId("GSM1");
 //        System.out.println(findBySample_id);
 //        return "ok";
 //    }
